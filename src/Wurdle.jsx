@@ -67,7 +67,11 @@ function Wurdle() {
                         solution={solution} 
                     />
                 );
+                
             })}
+            <div className="game-message">
+                {(isGameOver && guesses[0] !== null) ? "You won!" : "Keep trying!"}
+            </div>
             
         </div>
     );
